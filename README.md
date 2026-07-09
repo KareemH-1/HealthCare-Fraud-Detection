@@ -1,345 +1,236 @@
-🏥 Healthcare Fraud Detection System
+<div align="center">
 
-<p align="center">
-  <img src="https://svg-banners.vercel.app/api?type=origin&text1=Healthcare%20Fraud&text2=Detection%20System%20🚀&width=900&height=200&color=0078D4"/>
-</p><p align="center">"FastAPI" (https://img.shields.io/badge/API-FastAPI-009688?style=for-the-badge&logo=fastapi)
-"React" (https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react)
-"Azure SQL" (https://img.shields.io/badge/Database-Azure_SQL-0078D4?style=for-the-badge&logo=microsoftazure)
-"XGBoost" (https://img.shields.io/badge/ML-XGBoost-orange?style=for-the-badge)
-"Apache Spark" (https://img.shields.io/badge/Big_Data-Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark)
-"RabbitMQ" (https://img.shields.io/badge/Messaging-RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq)
+# 🏥 Healthcare Fraud Detection System
 
-</p>---
+### AI-Powered Healthcare Insurance Fraud Detection Platform
 
-📌 Project Overview
+Detecting fraudulent healthcare insurance claims using **Artificial Intelligence**, **Machine Learning**, **FastAPI**, **React**, **Azure SQL**, and **Apache Spark**.
 
-Healthcare Fraud Detection System is a complete AI-powered healthcare analytics platform designed to detect fraudulent insurance claims using Machine Learning.
+<br>
 
-The system combines:
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Azure SQL](https://img.shields.io/badge/Azure_SQL-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-ML-orange?style=for-the-badge)
+![Apache Spark](https://img.shields.io/badge/Apache_Spark-Big_Data-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-Messaging-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
 
-- React Dashboard
-- FastAPI Backend
-- Azure SQL Database
-- XGBoost Machine Learning
-- Apache Spark
-- Delta Lake
-- RabbitMQ
+<br>
 
-to provide real-time fraud detection, analytics, and healthcare insights.
+⭐ Real-Time Fraud Detection • 🤖 Machine Learning • 📊 Interactive Dashboard • 🏥 Healthcare Analytics
+
+</div>
 
 ---
 
-🚀 Key Features
+# 📌 Overview
 
-✅ AI-powered Fraud Detection
+Healthcare Fraud Detection System is an AI-powered platform designed to detect fraudulent healthcare insurance claims before approval.
 
-✅ Real-Time Claim Analysis
-
-✅ Secure Authentication
-
-✅ Role-Based Access Control
-
-✅ Interactive Healthcare Dashboard
-
-✅ Explainable AI
-
-✅ Medical Logic Engine
-
-✅ Big Data Processing
-
-✅ Provider Monitoring
-
-✅ Patient Monitoring
-
-✅ Fraud Analytics
-
-✅ Claim Management
+The system combines **Machine Learning**, **Healthcare Business Rules**, and **Big Data Processing** to help insurance companies reduce fraudulent activities while providing an enterprise dashboard for monitoring claims, providers, and patients.
 
 ---
 
-🏗️ System Architecture
+# ✨ Features
 
-                Medical Claim
-
-                       │
-
-                       ▼
-
-              FastAPI Backend API
-
-                       │
-
-        ┌──────────────┴──────────────┐
-
-        ▼                             ▼
-
- Azure SQL Database           Feature Engineering
-
-                                      │
-
-                                      ▼
-
-                              XGBoost Model
-
-                                      │
-
-                                      ▼
-
-                           Fraud Probability
-
-                                      │
-
-                                      ▼
-
-                           Medical Logic Engine
-
-                                      │
-
-                                      ▼
-
-                           RabbitMQ Messaging
-
-                                      │
-
-                                      ▼
-
-                           Analytics Dashboard
+- 🤖 AI Fraud Detection
+- 📄 Claim Submission & Review
+- 📊 Executive Dashboard
+- 📈 Interactive Analytics
+- 🏥 Provider Management
+- 👤 Patient Management
+- ⚡ FastAPI REST APIs
+- ☁️ Azure SQL Integration
+- 📡 RabbitMQ Messaging
+- 📚 Apache Spark Processing
+- 🔒 Secure Authentication
+- 🎯 Role-Based Access Control
 
 ---
 
-📂 Project Structure
+# 🖥️ Dashboard
 
-Healthcare-Fraud-Detection/
+The system provides modern dashboards including:
 
-├── app/
-│   ├── main.py
-│   ├── routes.py
-│   ├── schemas.py
-│
-├── core/
-│   ├── config.py
-│
-├── frontend/
-│
-├── ML/
-│
-├── services/
-│   ├── azure_db.py
-│   ├── kafka_producer.py
-│
-├── spark/
-│
-├── requirements.txt
-│
-└── README.md
+- Executive KPIs
+- Fraud Claims
+- Monthly Claims Trend
+- Monthly Fraud Trend
+- Fraud Rate
+- Claim Amount Analysis
+- Provider Performance
+- Patient Statistics
+- High-Risk Claims
+- Risk Distribution
+- Recent Activities
+- Interactive Charts
 
 ---
 
-⚙️ Technology Stack
+# 🤖 Machine Learning
 
-Layer| Technology
-Frontend| React + Vite
-Backend| FastAPI
-Database| Azure SQL
-Machine Learning| XGBoost
-Big Data| Apache Spark
-Storage| Delta Lake
-Messaging| RabbitMQ
-Charts| Chart.js
-Styling| Tailwind CSS
-Authentication| JWT
+The AI engine is built using **XGBoost**.
 
----
+Pipeline:
 
-🤖 Machine Learning Pipeline
-
-The fraud detection engine follows these steps:
-
-- Data Collection
 - Data Cleaning
 - Feature Engineering
 - Label Encoding
 - Model Training
-- Model Evaluation
 - Fraud Prediction
-- Explainable AI
+- Risk Classification
 
-Output:
+Outputs:
 
 - Fraud Score
+- Fraud Probability
 - Risk Level
-- Fraud Classification
 
 ---
 
-📊 Dashboard Features
+# 🏗️ System Architecture
 
-The analytics dashboard provides:
-
-- Total Claims
-- Fraud Claims
-- Non-Fraud Claims
-- Fraud Percentage
-- Monthly Claims Trend
-- Monthly Fraud Trend
-- Claim Amount Distribution
-- Fraud Score Distribution
-- Provider Ranking
-- Patient Ranking
-- High Risk Claims
-- Recent Activity
-- Interactive Charts
-
----
-
-💻 Frontend
-
-The frontend is built using React + Vite and provides:
-
-- Login
-- Insurance Dashboard
-- Provider Dashboard
-- Claim Submission
-- Fraud Analytics
-- Patient Management
-- Provider Management
-- Interactive Charts
-- Responsive Design
-
----
-
-🔐 Authentication
-
-The system supports:
-
-- Insurance Admin Login
-- Provider Login
-- Role-Based Authorization
-- Secure API Access
-
----
-
-📈 System Workflow
-
-Claim Submission
-
-↓
-
-FastAPI API
-
-↓
-
-Validation
-
-↓
-
+```text
+Medical Claim
+      │
+      ▼
+FastAPI REST API
+      │
+      ▼
+Azure SQL Database
+      │
+      ▼
 Feature Engineering
-
-↓
-
-XGBoost Prediction
-
-↓
-
-Fraud Score
-
-↓
-
-Database
-
-↓
-
+      │
+      ▼
+XGBoost Model
+      │
+      ▼
+Fraud Prediction
+      │
+      ▼
 RabbitMQ
-
-↓
-
-Dashboard
-
-↓
-
-Analytics
+      │
+      ▼
+Interactive Dashboard
+```
 
 ---
 
-📸 Screenshots
+# ⚙️ Tech Stack
 
-Login
-
-«Add login screenshot here.»
-
----
-
-Insurance Dashboard
-
-«Add dashboard screenshot here.»
-
----
-
-Provider Dashboard
-
-«Add provider dashboard screenshot here.»
+| Category | Technology |
+|----------|------------|
+| Frontend | React + Vite |
+| Backend | FastAPI |
+| Database | Azure SQL |
+| Machine Learning | XGBoost |
+| Big Data | Apache Spark |
+| Storage | Delta Lake |
+| Messaging | RabbitMQ |
+| Charts | Chart.js |
+| Styling | Tailwind CSS |
 
 ---
 
-Fraud Detection
+# 📂 Project Structure
 
-«Add fraud prediction screenshot here.»
-
----
-
-🎥 Demo
-
-Live Application
-
-Coming Soon
-
----
-
-Demo Video
-
-Coming Soon
+```text
+Healthcare-Fraud-Detection/
+│
+├── app/
+├── frontend/
+├── ML/
+├── services/
+├── spark/
+├── core/
+│
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-🚀 Installation
+# 🚀 Installation
 
-Backend
+### Backend
 
+```bash
 pip install -r requirements.txt
 
 python -m uvicorn app.main:app --reload
+```
 
----
+### Frontend
 
-Frontend
-
+```bash
 cd frontend
 
 npm install
 
 npm run dev
+```
 
 ---
 
-📊 Future Improvements
+# 📡 Main APIs
 
-- Real-time Streaming Analytics
+- Login
+- Process Claim
+- Dashboard Statistics
+- Claims
+- Patients
+- Providers
+- Fraud Analytics
+
+---
+
+# 📸 Screenshots
+
+> Add screenshots here:
+
+- Login Page
+- Insurance Dashboard
+- Provider Dashboard
+- Fraud Detection Result
+- Analytics Dashboard
+
+---
+
+# 👨‍💻 Team
+
+| Name | Role |
+|------|------|
+| **Omnya Ayman Roshdy Mohamed** | Team Leader |
+| **Sama Osama Mohamed Younes** | Team Member |
+| **Abdelhamed Ahmed Abdelhamed** | Team Member |
+| **Kareem Ahmed Taha** | Team Member |
+| **Laila hesham helmy mohamed** | Team Member |
+
+
+---
+
+# 🔮 Future Work
+
 - Deep Learning Models
-- Mobile Application
-- Explainable AI Dashboard
 - Cloud Deployment
-- Automated Model Retraining
+- Explainable AI
+- Mobile Application
+- Real-Time Streaming Analytics
+- Automatic Model Retraining
 
 ---
 
-👨‍💻 Team
+# 📬 Contact
 
-Name| Role
-Omnya Ayman Roshdy Mohamed| Team Leader
-Sama Osama Mohamed Younes| Team Member
-Abdelhamed Ahmed Abdelhamed| Team Member
-Kareem Ahmed Taha | Team Member
-Laila hesham helmy mohamed | Team Member
+**GitHub Repository**
+
+https://github.com/omnyaayman/HelathCare-Fraud-Detection
+
+**Email**
+
+omnyaayman033@gmail.com
 
 ---
 
