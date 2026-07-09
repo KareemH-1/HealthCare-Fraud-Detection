@@ -1,78 +1,346 @@
+🏥 Healthcare Fraud Detection System
+
 <p align="center">
   <img src="https://svg-banners.vercel.app/api?type=origin&text1=Healthcare%20Fraud&text2=Detection%20System%20🚀&width=900&height=200&color=0078D4"/>
-</p>
+</p><p align="center">"FastAPI" (https://img.shields.io/badge/API-FastAPI-009688?style=for-the-badge&logo=fastapi)
+"React" (https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react)
+"Azure SQL" (https://img.shields.io/badge/Database-Azure_SQL-0078D4?style=for-the-badge&logo=microsoftazure)
+"XGBoost" (https://img.shields.io/badge/ML-XGBoost-orange?style=for-the-badge)
+"Apache Spark" (https://img.shields.io/badge/Big_Data-Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark)
+"RabbitMQ" (https://img.shields.io/badge/Messaging-RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq)
 
-# 🏥 Healthcare Fraud Detection System 
+</p>---
 
-[![FastAPI](https://img.shields.io/badge/API-FastAPI-05998b.svg?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![Apache Spark](https://img.shields.io/badge/Engine-Apache_Spark-E25A1C.svg?style=flat&logo=apachespark)](https://spark.apache.org/)
-[![Delta Lake](https://img.shields.io/badge/Storage-Delta_Lake-00ADD8.svg?style=flat&logo=delta-lake)](https://delta.io/)
-[![Azure](https://img.shields.io/badge/Cloud-Azure_SQL-0089D6.svg?style=flat&logo=microsoftazure)](https://azure.microsoft.com/)
+📌 Project Overview
 
-## 📌 Project Overview
-An advanced, end-to-end healthcare fraud detection pipeline. This system processes medical claims in **real-time** via FastAPI and handles **Big Data processing** using PySpark and Delta Lake. The core logic utilizes an **XGBoost** model paired with a custom **Medical Logic Engine** to flag suspicious activities.
+Healthcare Fraud Detection System is a complete AI-powered healthcare analytics platform designed to detect fraudulent insurance claims using Machine Learning.
+
+The system combines:
+
+- React Dashboard
+- FastAPI Backend
+- Azure SQL Database
+- XGBoost Machine Learning
+- Apache Spark
+- Delta Lake
+- RabbitMQ
+
+to provide real-time fraud detection, analytics, and healthcare insights.
 
 ---
 
-## 🎯 Key Features
-- **Real-time Inference:** REST API to audit claims instantly.
-- **Explainable AI:** Uses PDP plots to explain why a claim was flagged (Distance, Red Flags, etc.).
-- **Medallion Architecture:** Data organized into Bronze, Silver, and Gold layers within **Delta Lake**.
-- **Medical Logic Engine:** Specialized rules to detect Z-score anomalies and medical mismatches.
-- **Message Broker Integration:** Asynchronous processing using **RabbitMQ**.
+🚀 Key Features
+
+✅ AI-powered Fraud Detection
+
+✅ Real-Time Claim Analysis
+
+✅ Secure Authentication
+
+✅ Role-Based Access Control
+
+✅ Interactive Healthcare Dashboard
+
+✅ Explainable AI
+
+✅ Medical Logic Engine
+
+✅ Big Data Processing
+
+✅ Provider Monitoring
+
+✅ Patient Monitoring
+
+✅ Fraud Analytics
+
+✅ Claim Management
 
 ---
 
-## 🏗️ Project Architecture & Directory Structure
-The system follows a modular production-ready structure:
+🏗️ System Architecture
 
-```text
-Healthcare-Fraud-System/
-├── 📁 app/               # FastAPI layer (Routes, Schemas, Main)
-├── 📁 core/              # # Global Configurations (.env handler)
-├── 📁 frontend/             # interface of web
-├── 📁 ml/                # XGBoost Model & Logic Engine
-├── 📁 services/          # External Connectors (Azure SQL, RabbitMQ)
-├── 📁 spark/      # Big Data Processing (Delta Lake handler)
-├── 📄 .env               # Environment Secrets (Not for GitHub)
-└── 📄 requirements.txt   # Production Dependencies
-```
+                Medical Claim
+
+                       │
+
+                       ▼
+
+              FastAPI Backend API
+
+                       │
+
+        ┌──────────────┴──────────────┐
+
+        ▼                             ▼
+
+ Azure SQL Database           Feature Engineering
+
+                                      │
+
+                                      ▼
+
+                              XGBoost Model
+
+                                      │
+
+                                      ▼
+
+                           Fraud Probability
+
+                                      │
+
+                                      ▼
+
+                           Medical Logic Engine
+
+                                      │
+
+                                      ▼
+
+                           RabbitMQ Messaging
+
+                                      │
+
+                                      ▼
+
+                           Analytics Dashboard
+
 ---
 
-## 🖥️ Frontend
+📂 Project Structure
 
-The system includes a **React-based dashboard** built using **Vite** for fast development and optimized builds. The frontend provides an interface to submit medical claims, visualize fraud predictions, and display analytics such as feature importance and anomaly indicators.
+Healthcare-Fraud-Detection/
 
-### Requirements
+├── app/
+│   ├── main.py
+│   ├── routes.py
+│   ├── schemas.py
+│
+├── core/
+│   ├── config.py
+│
+├── frontend/
+│
+├── ML/
+│
+├── services/
+│   ├── azure_db.py
+│   ├── kafka_producer.py
+│
+├── spark/
+│
+├── requirements.txt
+│
+└── README.md
 
-- [Node.js](https://nodejs.org/) (v18+ recommended)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+---
 
-### Setup Instructions
+⚙️ Technology Stack
 
-1. Navigate to the `frontend/` directory:
-  ```bash
-  cd frontend
-  ```
-2. Install dependencies:
-  ```bash
-  npm install
-  # or
-  yarn install
-  ```
-3. Start the development server:
-  ```bash
-  npm run dev
-  # or
-  yarn dev
-  ```
+Layer| Technology
+Frontend| React + Vite
+Backend| FastAPI
+Database| Azure SQL
+Machine Learning| XGBoost
+Big Data| Apache Spark
+Storage| Delta Lake
+Messaging| RabbitMQ
+Charts| Chart.js
+Styling| Tailwind CSS
+Authentication| JWT
 
-### Main Dependencies
+---
 
-- `react`, `react-dom` – Core UI library
-- `react-router-dom` – Routing
-- `chart.js`, `react-chartjs-2` – Data visualization
-- `lucide-react` – Icon set
-- `tailwindcss` – Utility-first CSS framework
-- `vite` – Fast build tool
---- 
+🤖 Machine Learning Pipeline
+
+The fraud detection engine follows these steps:
+
+- Data Collection
+- Data Cleaning
+- Feature Engineering
+- Label Encoding
+- Model Training
+- Model Evaluation
+- Fraud Prediction
+- Explainable AI
+
+Output:
+
+- Fraud Score
+- Risk Level
+- Fraud Classification
+
+---
+
+📊 Dashboard Features
+
+The analytics dashboard provides:
+
+- Total Claims
+- Fraud Claims
+- Non-Fraud Claims
+- Fraud Percentage
+- Monthly Claims Trend
+- Monthly Fraud Trend
+- Claim Amount Distribution
+- Fraud Score Distribution
+- Provider Ranking
+- Patient Ranking
+- High Risk Claims
+- Recent Activity
+- Interactive Charts
+
+---
+
+💻 Frontend
+
+The frontend is built using React + Vite and provides:
+
+- Login
+- Insurance Dashboard
+- Provider Dashboard
+- Claim Submission
+- Fraud Analytics
+- Patient Management
+- Provider Management
+- Interactive Charts
+- Responsive Design
+
+---
+
+🔐 Authentication
+
+The system supports:
+
+- Insurance Admin Login
+- Provider Login
+- Role-Based Authorization
+- Secure API Access
+
+---
+
+📈 System Workflow
+
+Claim Submission
+
+↓
+
+FastAPI API
+
+↓
+
+Validation
+
+↓
+
+Feature Engineering
+
+↓
+
+XGBoost Prediction
+
+↓
+
+Fraud Score
+
+↓
+
+Database
+
+↓
+
+RabbitMQ
+
+↓
+
+Dashboard
+
+↓
+
+Analytics
+
+---
+
+📸 Screenshots
+
+Login
+
+«Add login screenshot here.»
+
+---
+
+Insurance Dashboard
+
+«Add dashboard screenshot here.»
+
+---
+
+Provider Dashboard
+
+«Add provider dashboard screenshot here.»
+
+---
+
+Fraud Detection
+
+«Add fraud prediction screenshot here.»
+
+---
+
+🎥 Demo
+
+Live Application
+
+Coming Soon
+
+---
+
+Demo Video
+
+Coming Soon
+
+---
+
+🚀 Installation
+
+Backend
+
+pip install -r requirements.txt
+
+python -m uvicorn app.main:app --reload
+
+---
+
+Frontend
+
+cd frontend
+
+npm install
+
+npm run dev
+
+---
+
+📊 Future Improvements
+
+- Real-time Streaming Analytics
+- Deep Learning Models
+- Mobile Application
+- Explainable AI Dashboard
+- Cloud Deployment
+- Automated Model Retraining
+
+---
+
+👨‍💻 Team
+
+Name| Role
+Omnya Ayman Roshdy Mohamed| Team Leader
+Sama Osama Mohamed Younes| Team Member
+Abdelhamed Ahmed Abdelhamed| Team Member
+Kareem Ahmed Taha | Team Member
+Laila hesham helmy mohamed | Team Member
+
+---
+
+
